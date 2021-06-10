@@ -82,7 +82,7 @@ def graficoPlanisfero(df):
 
 ## Insights
 
-For machine learning we used the [sklearn.ensemble] library (https://scikit-learn.org/stable/modules/ensemble.html) and in particular the `RandomForestClassifier` module.
+For machine learning we used the [sklearn.ensemble](https://scikit-learn.org/stable/modules/ensemble.html) library and in particular the `RandomForestClassifier` module.
 
 Which allowed us to be able to recognize the type of clouds.
 
