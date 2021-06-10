@@ -200,13 +200,13 @@ def creazioneGrafico(dizionario_dati):
     fig, ax = plt.subplots(1, 1)
     fig.suptitle("Correlation between clouds")
 
-    ax.plot(high_campo_magn, high_lat, 'o', label="High Clouds")
-    ax.plot(low_campo_magn, low_lat, 'o', label="Low Clouds")
-    ax.plot(other_campo_magn, other_lat, 'o', label="Other")
+    ax.plot(high_campo_magn, high_lat, 'o', markersize=10, label="High Clouds", color="green")
+    ax.plot(low_campo_magn, low_lat, 'o', markersize=10, label="Low Clouds", color="red")
+    ax.plot(other_campo_magn, other_lat, 'o', markersize=10, label="Other", color="blue")
 
     plt.grid(True)
-    ax.set_ylabel("Latitude (degrees)")
-    ax.set_xlabel("Magnetic Field (micro tesla)")
+    ax.set_ylabel("Latitude (degrees)", fontsize=25)
+    ax.set_xlabel("Magnetic Field (micro tesla)", fontsize=25)
     ax.legend()
 
     dizionario_dati["colori"] = colori
@@ -221,7 +221,7 @@ def graficoPlanisfero(df):
 
     ax = world.plot(color='white', edgecolor='black', figsize=(40,40))
 
-    gdf.plot(ax=ax, marker="o", markersize=15, color = df["colori"])
+    gdf.plot(ax=ax, marker="o", markersize=30, color = df["colori"])
 
 
 if __name__ == "__main__":
