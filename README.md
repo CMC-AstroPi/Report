@@ -5,7 +5,7 @@ In this experience we verified whether there was a correlation between the stren
 ## Contributing
 
 Thanks for the help provided:
-- [ESA](http://www.esa.int/) for this wonderful initiative that allowed us to identify ourselves with two space explorers.
+- [ESA](http://www.esa.int/) for this wonderful initiative that allowed us to identify ourselves as two space explorers.
 - Our supervisor [Simone Conradi](https://github.com/conradis) for the support given.
 - [ITIS Mario Delpozzo](https://www.itiscuneo.gov.it/) for the opportunity it has given us.
 - [The MyWay Team](https://github.com/MyWay-AstroPi) for providing us with their data.
@@ -14,7 +14,7 @@ Thanks for the help provided:
 ### Snippet 1:
 
 This is the function that has the task of extracting 
-useful data from the images, for the calculation of machine learning.
+useful data from the images.
 
 ```python
 def calculateAreascaling(imagefile):
@@ -46,10 +46,10 @@ def calculateAreascaling(imagefile):
 ### Snippet 2:
 
 This is the function that has the task of obtaining the
-value of the earth's magnetic field given:
+value of the Earth's magnetic field given:
 - latitude
 - longitude
-- data acquisition of the data
+- acquisition of date and time of the data
 
 Thanks to the help of the site [NCEI Magnetic Field Calculators](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml#igrfwmm).
 
@@ -66,7 +66,7 @@ def getMagnetometricSensor():
 ### Snippet 3:
 
 This is the function that has the purpose of creating graphics in 
-the shape of a planisphere using a pandas dataframe.
+the shape of a planisphere using a `pandas` dataframe.
 
 ```python
 def graficoPlanisfero(df):
@@ -82,9 +82,8 @@ def graficoPlanisfero(df):
 
 ## Insights
 
-For machine learning we used the [sklearn.ensemble](https://scikit-learn.org/stable/modules/ensemble.html) library and in particular the `RandomForestClassifier` module.
-
-Which allowed us to be able to recognize the type of clouds.
+For machine learning we used the [sklearn.ensemble](https://scikit-learn.org/stable/modules/ensemble.html) library and in particular the `RandomForestClassifier` module
+which allowed us to recognize the type of clouds.
 
 ## Graphs
 
@@ -98,11 +97,11 @@ Which allowed us to be able to recognize the type of clouds.
 
 ## Warning
 
-To be able to execute the code you need to have the images and arrange all the files in a single folder.
+To execute the code you need to have the images and arrange all the files in a single folder.
 
 ## Conclusion
 
-In conclusion, based on the data returned, we can say that there is a correlation between the intensity of the earth's magnetic field and the formation of low clouds.
+In conclusion, based on the data returned, we can say that there is a correlation between the intensity of the Earth's magnetic field and the formation of low clouds.
 
 For more information see the [document]().
 
