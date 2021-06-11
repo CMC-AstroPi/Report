@@ -103,7 +103,7 @@ To execute the code you need to have the images and arrange all the files in a s
 
 In conclusion, based on the data returned, we can say that there is a correlation between the intensity of the Earth's magnetic field and the formation of low clouds.
 
-For more information see the [document]().
+For more information see the [document](https://github.com/CMC-AstroPi/Report/blob/main/cmc.pdf).
 
 ## Authors
 
